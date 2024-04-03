@@ -8,13 +8,13 @@ const JitsiMeetComponent = () => {
     const domain = "meet.jit.si";
 
     return (
-        <div>
+
           <JitsiMeeting 
             roomName={roomName}
             displayName={"ayad"}
             domain={domain}
           />
-        </div>
+
     );
 };
 
