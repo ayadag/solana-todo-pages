@@ -16,7 +16,7 @@ const JitsiMeetComponent = () => {
         containerStyles={{ display: "flex", flex: 1 }}
         />
         </div>
-    );
-};
+    )
+}
 
 export default JitsiMeetComponent
