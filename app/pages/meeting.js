@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../styles/Meeting.module.css'
 //import JitsiMeetComponent from '../components/meet/JitsiMeetComponent'
-import { JitsiMeeting } from '@jitsi/react-sdk'
+//import { JitsiMeeting } from '@jitsi/react-sdk'
 
 export default function Meeting(){
 
