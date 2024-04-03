@@ -5,8 +5,8 @@ import styles from '../styles/Contact.module.css'
 export default function Meeting(){
 
     return(
-        <div className={styles.container}>
+        {/*<div className={styles.container}>
             <h1>hello</h1>
-        </div>
+    </div>*/}
     )
 }
