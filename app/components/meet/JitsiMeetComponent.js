@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import { JitsiMeeting } from "@jitsi/react-sdk";
 
 
