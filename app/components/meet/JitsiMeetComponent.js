@@ -1,12 +1,13 @@
 import React from "react";
-import TodoSection from '../components/meet/JitsiMeetComponent';
+import { JitsiMeeting } from '@jitsi/react-sdk';
 
-export default function Meeting(){
+
+const JitsiMeetComponent = () => {
 
     domain = "meet.jit.si";
     roomName = "room1";
 
-    return(
+    return (
         <div style={{ height: "100vh", display: "grid", flexDirection: "column" }} >
         <JitsiMeeting 
         roomName={roomName}
@@ -15,5 +16,7 @@ export default function Meeting(){
         containerStyles={{ display: "flex", flex: 1 }}
         />
         </div>
-    )
-}
+    );
+};
+
+export default JitsiMeetComponent
