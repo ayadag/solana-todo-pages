@@ -1,20 +1,25 @@
 import React from "react";
-import styles from '../styles/Meeting.module.css'
+import styles from '../styles/Meeting.module.css';
+
+const domain = 'meet.jit.si';
+const options = {
+roomName: 'JitsiMeetAPIExample',
+width: 700,
+height: 700,
+parentNode: document.querySelector('#styles.container'),
+lang: 'de'
+};
+const api = new JitsiMeetExternalAPI(domain, options);
 
 export default function Meeting(){
     return(
+        <>
+        
+        <script src='https://meet.jit.si/external_api.js'></script>
+    
         <div className={styles.container}>
-            <h2 className={styles.title}>Contact Page</h2>
-            <div className={styles.details}>
-                <li className={styles.list}>
-                <label className={styles.label}>Name:</label>
-                <p className={styles.value}>Lorem</p>
-                </li>
-                <li className={styles.list}>
-                <label className={styles.label}>Email:</label>
-                <p className={styles.value}>lorem@example.com</p>
-                </li>
-            </div>
+
         </div>
+        </>
     )
 }
