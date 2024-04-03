@@ -6,7 +6,7 @@ const options = {
 roomName: 'room1',
 width: 700,
 height: 700,
-parentNode: document.querySelector('#styles.container'),
+parentNode: document.querySelector('#container'),
 lang: 'de'
 };
 const api = new JitsiMeetExternalAPI(domain, options);
