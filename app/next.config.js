@@ -2,6 +2,9 @@ const path = require('path')
 
 /** @type {import('next').NextConfig} */
 module.exports = {
+  ///////////
+  transpilePackages: ['@jitsi/react-sdk'],
+  ////////////////////
   reactStrictMode: false,
   webpack5: true,
   webpack: (config) => {
@@ -28,4 +31,5 @@ module.exports = {
     NEXT_PUBLIC_RPC_HOST: 'https://metaplex.devnet.rpcpool.com/',
     // NEXT_PUBLIC_RPC_HOST: 'https://api.metaplex.solana.com/',
   },
+  
 }
