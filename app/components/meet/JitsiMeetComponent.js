@@ -7,7 +7,7 @@ const JitsiMeetComponent = () => {
 
 
     return (
-        <div style={{ height: "100vh", display: "grid", flexDirection: "column" }} >
+        <div>
             <h1>hello</h1>
         </div>
 
