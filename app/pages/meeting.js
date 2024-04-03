@@ -8,7 +8,9 @@ export default function Meeting(){
 
     return(
         <>
+        <div className={styles.container}>
         <JitsiMeetComponent />
+        </div>
        </>
     )
 }
