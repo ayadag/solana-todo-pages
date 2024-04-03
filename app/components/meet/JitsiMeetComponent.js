@@ -13,7 +13,7 @@ const JitsiMeetComponent = () => {
             roomName={roomName}
             displayName={"ayad"}
             domain={domain}
-            containerStyles={{ display: "flex", flex: 1 }}
+
           />
         </div>
     );
