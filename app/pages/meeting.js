@@ -1,5 +1,5 @@
 import React from 'react'
-import TodoSection from '../components/meet/JitsiMeetComponent'
+import JitsiMeetComponent from '../components/meet/JitsiMeetComponent'
 
 export default function Meeting(){
 
