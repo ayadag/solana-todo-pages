@@ -3,7 +3,7 @@ const path = require('path')
 /** @type {import('next').NextConfig} */
 module.exports = {
   ///////////
-  transpilePackages: ['@jitsi/react-sdk'],
+  //transpilePackages: ['@jitsi/react-sdk'],
   ////////////////////
   reactStrictMode: false,
   webpack5: true,
