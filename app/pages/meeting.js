@@ -20,7 +20,8 @@ const Meeting = ({ match }) => {
   // INTIALISE THE MEET WITH THIS FUNCTION
   const startMeet = useCallback(() => {
     const options = {
-      roomName: match.params.id,
+      //roomName: match.params.id,
+      roomName: "room96",
       width: "100%",
       height: 500,
       configOverwrite: { prejoinPageEnabled: false },
