@@ -106,7 +106,7 @@ const Meeting = ({ match }) => {
       <div
         style={{
           backgroundColor: "rgb(10, 25, 41)",
-          height: "100vh",
+          //height: "20vh",
           margin: 0,
         }}
       ></div>
