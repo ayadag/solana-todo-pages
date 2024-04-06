@@ -22,8 +22,8 @@ const Meeting = ({ match }) => {
     const options = {
       //roomName: match.params.id,
       roomName: "room96",
-      width: "100%",
-      height: "100%",
+      width: "100vw",
+      height: "100vh",
       configOverwrite: { prejoinPageEnabled: false },
       interfaceConfigOverwrite: {
         // overwrite interface properties if you want
