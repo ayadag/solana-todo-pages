@@ -103,13 +103,13 @@ const Meeting = ({ match }) => {
       <script src="https://meet.jit.si/external_api.js"></script>
 
       <div id="jitsi-iframe" style={{ marginBottom: 0 }}></div>
-      <div
+      {/*<div
         style={{
           backgroundColor: "rgb(10, 25, 41)",
           //height: "20vh",
           margin: 0,
         }}
-      ></div>
+    ></div>*/}
     </React.Fragment>
   );
 };
