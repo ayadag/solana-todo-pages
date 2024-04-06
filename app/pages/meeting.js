@@ -89,7 +89,7 @@ const Meeting = ({ match }) => {
   };
 
   return (
-    <React.Fragment>
+    <>
       {/*<header
         style={{
           backgroundColor: "rgb(10, 25, 41)",
@@ -110,7 +110,7 @@ const Meeting = ({ match }) => {
           margin: 0,
         }}
     ></div>*/}
-    </React.Fragment>
+    </>
   );
 };
 
