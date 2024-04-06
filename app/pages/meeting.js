@@ -90,7 +90,7 @@ const Meeting = ({ match }) => {
 
   return (
     <React.Fragment>
-      <header
+      {/*<header
         style={{
           backgroundColor: "rgb(10, 25, 41)",
           color: "white",
@@ -98,7 +98,7 @@ const Meeting = ({ match }) => {
         }}
       >
         <p style={{ margin: 0, padding: 10 }}>Meeting name</p>
-      </header>
+    </header>*/}
 
       <script src="https://meet.jit.si/external_api.js"></script>
 
