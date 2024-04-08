@@ -1,4 +1,5 @@
 "use clinet";
+import { useSearchParams } from "next/navigation";
 
 //import React from "react";
 //import styles from '../styles/Contact.module.css'
@@ -8,6 +9,12 @@ import React, { useEffect, useCallback, useContext } from "react";
 //import { MeetContext } from "../context/MeetContext";
 
 const Meeting = ({ match }) => {
+
+  //get the room name from the Url parameters.
+  const searchParams = useSearchParams();
+  const RoomN = searchParams.get("roomn");
+
+
   //AS OF NOW DOMAIN WOULD BE JITSI'S AS WE ARE STILL USING THIER SERVERS
   const domain = "meet.jit.si";
   let api = {};
@@ -23,7 +30,8 @@ const Meeting = ({ match }) => {
   const startMeet = useCallback(() => {
     const options = {
       //roomName: match.params.id,
-      roomName: "room96",
+      //roomName: "room96",
+      roomName: RoomN,
       width: "100vw",
       height: "100vh",
       configOverwrite: { prejoinPageEnabled: false },
