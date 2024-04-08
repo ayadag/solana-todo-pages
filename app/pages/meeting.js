@@ -1,3 +1,5 @@
+"use clinet";
+
 //import React from "react";
 //import styles from '../styles/Contact.module.css'
 
