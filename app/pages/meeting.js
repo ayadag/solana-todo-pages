@@ -1,7 +1,7 @@
 "use clinet";
 import { useSearchParams } from "next/navigation";
 
-import React from "react";
+//import React from "react";
 //import styles from '../styles/Contact.module.css'
 
 import React, { useEffect, useCallback, useContext } from "react";
