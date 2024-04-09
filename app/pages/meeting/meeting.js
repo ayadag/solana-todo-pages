@@ -7,14 +7,14 @@
 import React, { useEffect, useCallback, useContext } from "react";
 //import { useHistory } from "react-router-dom";
 //import { MeetContext } from "../context/MeetContext";
-import { Outlet, useParams } from "react-router-dom";
+//import { Outlet, useParams } from "react-router-dom";
 
 const Meeting = ({ match }) => {
 
   //get the room name from the Url parameters.
-  const [searchParams, setSearchParams] = useParams();
-  const RoomN = searchParams.get('roomn');
-  //console.log(searchParams);
+  // const [searchParams, setSearchParams] = useParams();
+  // const RoomN = searchParams.get('roomn');
+  // console.log(searchParams);
 
   //AS OF NOW DOMAIN WOULD BE JITSI'S AS WE ARE STILL USING THIER SERVERS
   const domain = "meet.jit.si";
@@ -31,8 +31,8 @@ const Meeting = ({ match }) => {
   const startMeet = useCallback(() => {
     const options = {
       //roomName: match.params.id,
-      //roomName: "room96",
-      roomName: RoomN,
+      roomName: "room96",
+      //roomName: RoomN,
       width: "100vw",
       height: "100vh",
       configOverwrite: { prejoinPageEnabled: false },
