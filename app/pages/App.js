@@ -5,7 +5,7 @@ import MeetPage from "../jitsi/MeetPage";
 import StartupPage from "../jitsi/StartupPage";
 import ThankYou from "../jitsi/ThankYouPage";
 
-import "../styles/custom.css";
+//import "../jitsi/custom.css";
 
 const App = () => {
   return (
