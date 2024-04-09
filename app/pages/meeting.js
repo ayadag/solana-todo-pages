@@ -11,8 +11,8 @@ import React, { useEffect, useCallback, useContext } from "react";
 const Meeting = ({ match }) => {
 
   //get the room name from the Url parameters.
-  const searchParams = useSearchParams();
-  const RoomN = searchParams.get("roomn");
+  // const searchParams = useSearchParams();
+  // const RoomN = searchParams.get("roomn");
 
 
   //AS OF NOW DOMAIN WOULD BE JITSI'S AS WE ARE STILL USING THIER SERVERS
@@ -28,6 +28,10 @@ const Meeting = ({ match }) => {
 
   // INTIALISE THE MEET WITH THIS FUNCTION
   const startMeet = useCallback(() => {
+    
+    const searchParams = useSearchParams();
+    const RoomN = searchParams.get("roomn");
+
     const options = {
       //roomName: match.params.id,
       //roomName: "room96",
