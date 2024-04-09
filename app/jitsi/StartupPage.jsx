@@ -10,7 +10,7 @@ import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import { useHistory } from "react-router-dom";
 import { MeetContext } from "./MeetContext";
 import MuiAlert from "@material-ui/lab/Alert";
-import { generateString } from ".generateRandomString";
+import { generateString } from "./generateRandomString";
 
 // Alert when the user hasn't filled up their name
 function Alert(props) {
