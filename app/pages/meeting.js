@@ -7,12 +7,12 @@
 import React, { useEffect, useCallback, useContext } from "react";
 //import { useHistory } from "react-router-dom";
 //import { MeetContext } from "../context/MeetContext";
-import { Outlet, useSearchParams } from "react-router-dom";
+import { Outlet, useParams } from "react-router-dom";
 
 const Meeting = ({ match }) => {
 
   //get the room name from the Url parameters.
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useParams();
   const RoomN = searchParams.get('roomn');
   //console.log(searchParams);
 
