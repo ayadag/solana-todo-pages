@@ -1,4 +1,4 @@
-"use clinet";
+//"use clinet";
 //import { useSearchParams } from "next/navigation";
 
 //import React from "react";
@@ -7,13 +7,13 @@
 import React, { useEffect, useCallback, useContext } from "react";
 //import { useHistory } from "react-router-dom";
 //import { MeetContext } from "../context/MeetContext";
-import { useSearchParams } from "react-router-dom";
+//import { useSearchParams } from "react-router-dom";
 
 const Meeting = ({ match }) => {
 
   //get the room name from the Url parameters.
-  const searchParams = useSearchParams();
-  const RoomN = searchParams.get('roomn');
+  // const searchParams = useSearchParams();
+  // const RoomN = searchParams.get('roomn');
   //console.log(searchParams);
 
   //AS OF NOW DOMAIN WOULD BE JITSI'S AS WE ARE STILL USING THIER SERVERS
@@ -31,8 +31,8 @@ const Meeting = ({ match }) => {
   const startMeet = useCallback(() => {
     const options = {
       //roomName: match.params.id,
-      //roomName: "room96",
-      roomName: RoomN,
+      roomName: "room96",
+      //roomName: RoomN,
       width: "100vw",
       height: "100vh",
       configOverwrite: { prejoinPageEnabled: false },
